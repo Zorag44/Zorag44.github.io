@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Doc edit</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Top</a></li>
+					<li><a href="#skills" id="pata">skills</a></li>
+					<li><a href="#Projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="images/untitled.png" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1 id="ok"></h1>
+								<h3 id="idk"></h3>
+							</header>
+							<p id="okay"></p>
+							<a href="#skills" class="button large scrolly" onclick="fun()" >More</a>
+						</div>
+					</div>
+				</div>
+			</article>
+
+		<!-- Work -->
+			<article id="skills" class="wrapper style2">
+				<!-- <div class="col-4 col-5-large col-12-medium">
+					<span class="image fit"><img src="images/one.jpg" alt="" /></span>
+				</div> -->
+				<div class="container">
+					<header>
+						<h2>I have worked with</h2>
+						<h3 id="yaar"></h3>
+					 </header>
+					<footer>
+						<!-- <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p> -->
+						<a href="#Projects" class="button large scrolly">See some of my recent work</a>
+					</footer>
+				</div>
+			</article> -->
+
+		<!-- Portfolio -->
+			<article id="Projects" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Here's some stuff I made recently.</h2>
+						<!-- <p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p> -->
+					</header>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="https://lildjang.herokuapp.com/" target="_blank" class="image featured"><img src="images/chat.jpg" alt="" /></a>
+								<h3><a href="https://lildjang.herokuapp.com/" target="_blank">A web app for chatting publicly whilst maintaining anonymity.</a></h3>
+								<!-- <p>Ornare nulla proin odio consequat.</p> -->
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="https://github.com/Zorag44/Password_Management_System" target="_blank" class="image featured"><img src="images/lock.png" alt="" /></a>
+								<h3><a href="https://github.com/Zorag44/Password_Management_System" target="_blank">A Password Management System</a></h3>
+								<p>An unhackable password management system enriched with various functionalities.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="https://top.gg/user/773391942981386241" target="_blank" class="image featured"><img src="images/download1.png" alt="" /></a>
+								<h3><a href="https://top.gg/user/773391942981386241" target="_blank">Discord bots<br></a></h3>
+								<p>Link to my top.gg profile, the biggest bot hosting platform out there with 2 of my bots verified.</p>
+							</article>
+						</div>
+						
+					<footer>
+						<!-- <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p> -->
+						<h5><a href="#contact" class="button large scrolly">Get in touch with me</a></h5>
+					</footer>
+				</div>
+			</article>
+
+		<!-- Contact -->
+			<article id="contact" class="wrapper style3">
+				<div class="container medium">
+					<header>
+						<h2>Connect with me via</h2>
+						<h3>Linkedin, Gmail, Github, Discord</h3>
+						<!-- <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p> -->
+					</header>
+					<ul class="social">
+						
+						<li><a href="https://www.linkedin.com/in/shrom2222/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<!-- <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li> -->
+						<li><a href="mailto: shromworld@gmail.com" target="_blank" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="https://github.com/Zorag44" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+					</ul>
+							<hr />
+						</div>
+					</div>
+					
+				</div>
+			</article>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				var i = 0;
+				var txt = "Hi, I'm <strong>Shrom</strong>   aka icecreamtruck444 A <strong>Computer Science</strong> undergrad from India, an aspiring <strong>developer</strong> and a <strong>sport programming</strong> enthusiast.";
+				var speed=25;
+				typewriter=()=>{
+					if(i<=32){
+						document.querySelector("#ok").innerHTML=txt.substring(0,i);
+					}
+					else if(i>32 && i<54){
+						document.querySelector("#idk").innerHTML=txt.substring(33,i);
+					}
+					else{
+						document.querySelector("#okay").innerHTML=txt.substring(54,i);
+						
+					}
+					i++;
+					if(i<=txt.length){
+						setTimeout(typewriter,speed);
+					}
+				}
+				window.addEventListener("load",typewriter);
+				var txt1='C, C++, Python, Batch,<br> Javascript, Html, CSS,<br> Automation, APIs, Django,<br> Scraping, Discord bots,<br> etc';
+				document.getElementById("pata").addEventListener("click",fun);
+				i=0;
+				var s1=1000;
+				function fun(){
+					document.getElementById("yaar").innerHTML=txt1.substring(0,i);
+					i++;
+					if(i<=txt1.length){
+						setTimeout(fun,s1);
+					}
+				}
+			</script>
+
+	</body>
+</html>
