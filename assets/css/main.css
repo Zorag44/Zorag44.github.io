@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,600italic,700");
 @import url("fontawesome-all.min.css");
 
-/*
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -31,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	/* background-image: url('images/one1.jpg'); */
 }
 
 ol, ul {
@@ -227,6 +224,7 @@ input, select, textarea {
 
 	.container {
 		margin: 0 auto;
+		/* background-image: url(images/one1.jpg); */
 		max-width: calc(100% - 50px);
 		width: 1200px;
 	}
@@ -1789,7 +1787,7 @@ input, select, textarea {
 				-webkit-transition: top .2s ease-in-out;
 				-ms-transition: top .2s ease-in-out;
 				transition: top .2s ease-in-out;
-				display: block;
+				display: inline;
 				width: 48px;
 				height: 48px;
 				border-radius: 6px;
