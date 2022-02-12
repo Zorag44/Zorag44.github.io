@@ -7,6 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Nav -->
@@ -23,9 +24,9 @@
 			<article id="top" class="wrapper style1">
 				<div class="container">
 					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/Untitled.png" alt="" /></span>
-						</div>
+						<!-- <div class="col-4 col-5-large col-12-medium"> -->
+							<!-- <span class="image fit"><img src="images/Untitled.png" alt="" /></span> -->
+						<!-- </div> -->
 						<div class="col-8 col-7-large col-12-medium">
 							<header>
 								<h1 id="ok"></h1>
@@ -34,17 +35,20 @@
 							<p id="okay"></p>
 							<a href="#skills" class="button large scrolly" onclick="fun()" >More</a>
 						</div>
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="images/Untitled.png" alt="" /></span>
+						</div>
 					</div>
 				</div>
 			</article>
 
 		<!-- Work -->
-			<article id="skills" class="wrapper style2">
+			<article id="skills" class="wrapper style2" style="background-image: url('images/one1.jpg');">
 				<!-- <div class="col-4 col-5-large col-12-medium">
 					<span class="image fit"><img src="images/one.jpg" alt="" /></span>
 				</div> -->
 				<div class="container">
-					<header>
+					<header >
 						<h2>I have worked with</h2>
 						<h3 id="yaar"></h3>
 					 </header>
@@ -101,12 +105,15 @@
 						<!-- <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p> -->
 					</header>
 					<ul class="social">
-						
-						<li><a href="https://www.linkedin.com/in/shrom2222/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://www.linkedin.com/in/shrom2222/" target="_blank"><img src="images/linkedin.png" alt="linkedin" height="100" width="150"></a></li>
+						<li><a href="mailto: shromworld@gmail.com" target="_blank"><img src="images/gmail.png" alt="gmail" height="100" width="150"></a></li>
+						<li><a href="https://github.com/Zorag44" target="_blank"><img src="images/github.png" alt="github" height="100" width="150"></a></li>
+						<li><a href="https://top.gg/user/773391942981386241" target="_blank"><img src="images/download1.png" alt="discord" height="100" width="150"></a></li>
+						<!-- <li><a href="https://www.linkedin.com/in/shrom2222/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 						<!-- <li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li> -->
-						<li><a href="mailto: shromworld@gmail.com" target="_blank" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-						<li><a href="https://github.com/Zorag44" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+						<!-- <li><a href="mailto: shromworld@gmail.com" target="_blank" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li> -->
+						<!-- <li><a href="https://github.com/Zorag44" class="icon brands fa-github"><span class="label">Github</span></a></li> -->
+						<!-- <li><a href="" class="icon brands fa-discord"><span class="label">Discord</span></a></li> --> 
 					</ul>
 							<hr />
 						</div>
@@ -143,10 +150,10 @@
 					}
 				}
 				window.addEventListener("load",typewriter);
-				var txt1='C, C++, Python, Batch,<br> Javascript, Html, CSS,<br> Automation, APIs, Django,<br> Scraping, Discord bots,<br> etc';
+				var txt1='C, C++, Python, Batch,<br> Javascript, Html, CSS,<br> Automation,<br> APIs,<br> Django,<br> Scraping, Discord bots,<br> etc';
 				document.getElementById("pata").addEventListener("click",fun);
 				i=0;
-				var s1=1000;
+				var s1=50;
 				function fun(){
 					document.getElementById("yaar").innerHTML=txt1.substring(0,i);
 					i++;
